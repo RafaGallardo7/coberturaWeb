@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:version='2' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+  <head>
+    <meta content='initial-scale=1.0, user-scalable=no' name='viewport'/>
+    <meta charset='utf-8'/>
+    <title>
+      MAPA COBERTURA CELULAR CUENCA ECUADOR
+    </title>
+    <link rel="stylesheet" href="./stylesheet.css" type="text/css" media="all" />
+    <script type="text/javascript" src="./javascript.js"></script>
+    
+    <h1 align='center' id='hUno'>
+      UNIVERSIDAD DE CUENCA
+    </h1>
+    <h4 align='center' id='hDos'>
+      MAPA DE COBERTURA CELULAR
+    </h4>
+    <style>
+
+  </head>
+  <script src='http://maps.googleapis.com/maps/api/js'/>
+  <script src='https://www.google.com/jsapi' type='text/javascript'/>
+  <!-- Archivo Js leido desde sites.google https://sites.google.com/site/myfirstname002/file-storage-busapp que contiene informacion del mapa de cobertura celular -->
+  <script src='http://sites.google.com/site/myfirstname002/file-storage-busapp/allData.js' type='text/javascript'/>
+
+  <body>
+    <div id='divMainBody'>
+      <center>
+        <div id='divIzqFind'>
+          <div id='barLatDerecha'>
+            <img id='imgBarLatDer' src='http://3.bp.blogspot.com/-42u3RXqUAYk/VY7Oat-kXhI/AAAAAAAABXY/MJz4MNYm920/s1600/image3.png'/>
+          </div>
+          <div id='divFindArea'>
+            <label class='tag' id='lblFindArea'>
+              Buscar Área
+            </label>
+            <br/>
+            <input class='elemDivIzqFind' id='txtFindArea' max='7200' min='1' step='1' type='number' value='1'/>
+            <input class='elemDivIzqFind' id='btnFindArea' onClick='buscarArea()' type='submit' value='Buscar'/>
+            <div id='navButtons'>
+              <button class='btnNav' id='btnArriba' onClick='moveArriba()' type='button'>
+                &#8593;
+              </button>
+              <br/>
+              <button class='btnNav' id='btnIzquierda' onClick='moveIzquierda()' type='button'>
+                &#8592;
+              </button>
+              <button class='btnNav' id='btnDerecha' onClick='moveDerecha()' type='button'>
+                &#8594;
+              </button>
+              <br/>
+              <button class='btnNav' id='btnAbajo' onClick='moveAbajo()' type='button'>
+                &#8595;
+              </button>
+            </div>
+          </div>
+          <div id='divIzqShow'>
+            <label class='tag' id='lblFindArea'>
+              Resultados
+            </label>
+            <br/>
+            <label class='labelResults'>
+              Num. Área:
+            </label>
+            <label class='resLblResults' id='lblShowAreaSelect'>
+              0
+            </label>
+            <br/>
+            <label class='labelResults'>
+              Pot. Prom:
+            </label>
+            <label class='resLblResults' id='lblShowPotPromSelect'>
+              0 dB
+            </label>
+            <br/>
+            <label class='labelResults'>
+              Num. Dat:
+            </label>
+            <label class='resLblResults' id='lblShowNumPotsSelect'>
+              0
+            </label>
+            <br/>
+            <label class='labelResults'>
+              Potencias Medidas:
+            </label>
+            <textArea id='txtAreaPotMedidas' readonly='readonly'/>
+          </div>
+        </div>
+      </center>
+      <center>
+        <div id='googleMap'/>
+      </center>
+      <center>
+      </center>
+
+      <br/>
+      <center>
+        <div id='divAllStats'>
+          <div id='divClaro' onclick='getHistogram(mPotPromAreaClaro, mediaClaro, desvEClaro)'/>
+          <div id='divMovistar' onclick='getHistogram(mPotPromAreaMovistar, mediaMovistar, desvEMovistar)'/>
+          <div id='divCnt' onclick='getHistogram(mPotPromAreaCnt, mediaCnt, desvECnt)'/>
+        </div>
+        <br/>
+        <div id='divHistograma'>
+        </div>
+        <br/>
+        <div id='divMediaDesvE'>
+        </div>
+      </center>
+      <header>
+      </header>
+      <footer>
+         <h5>coberturaWeb v2.1 - Copyright (c) 2015 Jaramillo Juan Carlos, Gallardo Rafael (Under GNU GPL v3 License)</h5>
+      </footer>
+    </div>
+  </body>
+  <b:section id='section1'/>
+</html>

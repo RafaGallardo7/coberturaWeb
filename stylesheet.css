@@ -1,0 +1,155 @@
+       * {
+        box-sizing: border-box;
+      }
+      html, body {
+        background: linear-gradient(#33CCFF, #C2F0FF);
+      }
+      #hUno, #hDos {
+        margin-top:2%;
+        color: #248FB2;
+        font-family: Georgia, Cambria, Times, "Times New Roman";
+      }
+      #divIzqFind {
+        height: auto;
+        width: 15%;
+        float: left;
+        margin-top: 2%;
+        margin-left: 2%;
+        text-align: center;
+      }
+      #barLatDerecha {
+        width: 90%;
+        height: auto;
+        float: center;
+      }
+      #divFindArea{
+        height: auto;
+        width: 100%;
+        margin-top: 2%;
+        float: left;
+        overflow:hidden;
+      }
+      #lblResult{
+        font-size:100%;	
+      }
+      #lblFindArea{
+        font-size:100%;	
+      }
+      #txtFindArea {
+        float: left;
+        margin-left:2%;
+        margin-top: 10%;
+        height: 10%;
+        width: 25%;
+        background: #0099FF;
+      }
+      #btnFindArea {
+        margin-left:2%;
+        float: left;
+        background: #4DB8FF;
+        margin-top: 10%;
+      }
+      #navButtons {
+        margin-left:2%;
+        float: left;
+      }
+      #divIzqShow {
+        height: auto;
+        width: 100%;
+        float: left;
+        margin-top: 4%;
+        margin-left: 2%;
+      }
+      #googleMap {
+        height: 38em;
+        width: 75%;
+        margin-top:3%;
+        border-radius: 15px 50px 50px 15px;
+      }
+      #fileinput {
+        background: #6685A3;
+      }
+      #imgBarLatDer {
+        width: 100%;
+        height: auto;
+      }
+      #myChart {
+        background: #526A82;
+      }
+      .tag {
+        font-family: "Lucida Sans Unicode", Georgia, Serif;
+        font-size: 100%;
+        color: #00476B;
+        text-decoration: underline;
+        font-weight: bolder;
+      }
+      .elemDivIzqFind {
+        border-radius: 6px;
+      }
+      .labelResults {
+        font-family: "Lucida Sans Unicode", Georgia, Serif;
+        font-size: 80%;
+        color: #003380;
+      }
+      .resLblResults {
+        font-family: "Lucida Sans Unicode", Georgia, Serif;
+        font-size: 80%;
+        color: #0099FF;
+        font-weight: bolder;
+      }
+      #txtAreaPotMedidas {
+        height: 40px;
+        width: 80%;
+        background: #4DB8FF;
+        resize: none;
+        border-radius: 6px;
+      }
+      .btnNav {
+        border-radius: 6px;
+        background: #0099FF;
+      }
+      #divClaro {
+        width		: 28%;
+        height		: auto;
+        font-size	: 11px;
+        margin-left: 4%;
+        float: left;
+        background: #526A82;
+      }	
+      #divMovistar {
+        width		: 28%;
+        height		: auto;
+        font-size	: 11px;
+        margin-left: 4%;
+        float: left;
+        background: #526A82;
+      }
+      #divCnt {
+        width		: 28%;
+        height		: auto;
+        font-size	: 11px;
+        margin-left: 4%;
+        float: left;
+        background: #526A82;
+      }
+      #divHistograma {
+        width		: 90%;
+        height		: auto;
+        margin-left: 4%;
+        margin-right: 4%;
+        background: #526A82;
+        font-size	: 9px;
+        border-radius: 6px;
+      }
+      #divMediaDesvE {
+        width		: 90%;
+        height		: auto;
+        margin-left: 4%;
+        margin-right: 4%;
+        background: #526A82;
+        font-size	: 9px;
+        border-radius: 6px;
+      }
+      #btnIzquierda {
+        float: left;      
+      }
